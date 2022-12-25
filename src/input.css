@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter&family=Playfair+Display&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply box-border
+}
+
+body {
+  @apply font-body text-abu bg-putih
+}
+
+header#scroll {
+  @apply bg-putih animate-fadeInTop backdrop-blur-md bg-opacity-80 shadow-sm
+}
+
+header#scroll a#logo {
+  @apply text-abu
+}
+
+header#scroll #hamburger span {
+  @apply bg-abu
+}
+
+header#scroll ul li a {
+  @apply md:text-abu
+}
+
+header#scroll ul li a.active {
+  @apply text-coklat
+}
+
+header ul li a.active {
+  @apply text-coklat
+}
+
+#active {
+  @apply opacity-100 visible ease-in-out
+}
+
+#active p {
+  @apply animate-fadeInTop animation-delay-75
+}
+
+#active h1 {
+  @apply animate-fadeInTop animation-delay-500
+}
+
+#active span {
+  @apply animate-fadeInTop animation-delay-800
+}
+
+.bg-surah {
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(/dist/image/gallery/photo-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* width */
+::-webkit-scrollbar {
+  @apply w-3
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-putih
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-coklat rounded-full
+}
